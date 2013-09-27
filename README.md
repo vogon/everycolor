@@ -2,7 +2,7 @@
 
 colors, all of 'em.
 
-[https://twitter.com/everycolorbot](follow @everycolorbot) on twitter if you wanna keep up on all the latest happenings in the world of color.
+[follow @everycolorbot](https://twitter.com/everycolorbot) on twitter if you wanna keep up on all the latest happenings in the world of color.
 
 ## deployment guide
 
