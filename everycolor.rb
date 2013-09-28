@@ -32,7 +32,7 @@ end
 
 def make_color_png(color)
 	rgba, w3cname = chunkify_color(color)
-	hex = printf("%06x", color)
+	hex = sprintf("%06x", color)
 	png = ChunkyPNG::Image.new(400, 300, rgba)
 	filename = "#{hex}_#{w3cname}.png"
 
