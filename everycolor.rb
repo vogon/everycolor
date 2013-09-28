@@ -32,7 +32,7 @@ end
 
 def make_color_png(color)
 	rgba, w3cname = chunkify_color(color)
-	hex = color.to_s(16)
+	hex = printf("%06x", color)
 	png = ChunkyPNG::Image.new(400, 300, rgba)
 	filename = "#{hex}_#{w3cname}.png"
 
@@ -84,7 +84,7 @@ Twitter.configure do |config|
 end
 
 def tweet
-	last_color = /0x[0-9a-f]{6}/.match(Twitter.user.status.text)[0].to_i(16) # gross	
+	last_color = /0x[0-9a-f]{,6}/.match(Twitter.user.status.text)[0].to_i(16) # gross	
 	this_color = choose_color(last_color)
 	hex, w3cname, filename = make_color_png(this_color)
 
