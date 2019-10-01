@@ -17,5 +17,11 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  chunky_png
-  twitter
+  chunky_png (~> 1.2.8)
+  twitter (~> 4.8.1)
+
+RUBY VERSION
+   ruby 2.5.1p57
+
+BUNDLED WITH
+   2.0.2
